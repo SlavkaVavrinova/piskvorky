@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  width: 350px;
+  height: 1000px;
+  margin: 100px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-image: linear-gradient(#615dad, #ffc8da);
+}
+
+header {
+  background-color: #283e50;
+}
+.uvodni {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+}
+main {
+  width: 350px;
+  height: 250px;
+  text-align: center;
+  color: white;
+  background-color: #283e50;
+
+  padding: 10px 30px;
+  line-height: 1.5;
+}
+h1 {
+  font-family: Lobster;
+}
+footer {
+  bottom: -245px;
+}
+.odkazy {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.pravidla {
+  background-color: #1fcca4;
+  display: block;
+
+  border-bottom: 0.5px solid black;
+}
+.pravidla:hover {
+  background-color: #1cbb96;
+  display: block;
+}
+
+.hrat {
+  background-color: #0197f6;
+  display: block;
+}
+
+.hrat:hover {
+  background-color: #0090e9;
+  display: block;
+}
