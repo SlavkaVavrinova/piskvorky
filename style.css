@@ -9,67 +9,74 @@ html {
 
 body {
   width: 350px;
-  height: 1000px;
   margin: 100px auto;
+  color: white;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  text-align: center;
   background-image: linear-gradient(#615dad, #ffc8da);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
   background-color: #283e50;
+  width: 350px;
+  height: 210px;
+  border-radius: 7px 7px 0 0;
 }
+
 .uvodni {
   width: 350px;
+  height: 210px;
+  border-radius: 7px 7px 0 0;
+}
+
+main {
+  background-color: #283e50;
+  padding: 20px 15px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+  font-family: Lobster;
   margin: 0;
   padding: 0;
 }
-main {
-  width: 350px;
-  height: 250px;
-  text-align: center;
-  color: white;
-  background-color: #283e50;
 
-  padding: 10px 30px;
-  line-height: 1.5;
-}
-h1 {
-  font-family: Lobster;
-}
-footer {
-  bottom: -245px;
-}
 .odkazy {
+  width: 350px;
   list-style: none;
   margin: 0;
   padding: 0;
+  align-self: stretch;
 }
-a {
+
+.odkazy__pravidla a {
   color: white;
-  display: block;
   text-decoration: none;
   text-align: center;
-  padding: 10px 0;
-}
-
-.pravidla {
+  padding: 15px 0;
   background-color: #1fcca4;
+  border-bottom: 0.5px solid #283e50;
   display: block;
-
-  border-bottom: 0.5px solid black;
 }
-.pravidla:hover {
+
+.odkazy__pravidla a:hover {
   background-color: #1cbb96;
-  display: block;
 }
 
-.hrat {
+.odkazy__hrat a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 0;
   background-color: #0197f6;
   display: block;
 }
 
-.hrat:hover {
+.odkazy__hrat a:hover {
   background-color: #0090e9;
-  display: block;
 }
