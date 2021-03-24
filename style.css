@@ -15,23 +15,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background-image: linear-gradient(#615dad, #ffc8da);
-  display: flex;
-  flex-wrap: wrap;
-}
-
-header {
-  background-color: #283e50;
-  width: 350px;
-  height: 210px;
-  border-radius: 7px 7px 0 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .uvodni {
   width: 350px;
   height: 210px;
   border-radius: 7px 7px 0 0;
+  background-color: #283e50;
+  display: block;
 }
-
 main {
   background-color: #283e50;
   padding: 20px 15px;
@@ -41,12 +35,12 @@ main {
 h1 {
   font-size: 50px;
   font-weight: normal;
-  font-family: Lobster;
+  font-family: 'Lobster', cursive;
   margin: 0;
   padding: 0;
 }
 
-.odkazy {
+footer {
   width: 350px;
   list-style: none;
   margin: 0;
@@ -54,7 +48,7 @@ h1 {
   align-self: stretch;
 }
 
-.odkazy__pravidla a {
+.pravidla {
   color: white;
   text-decoration: none;
   text-align: center;
@@ -64,11 +58,11 @@ h1 {
   display: block;
 }
 
-.odkazy__pravidla a:hover {
+.pravidla:hover {
   background-color: #1cbb96;
 }
 
-.odkazy__hrat a {
+.hrat {
   color: white;
   text-decoration: none;
   text-align: center;
@@ -77,6 +71,6 @@ h1 {
   display: block;
 }
 
-.odkazy__hrat a:hover {
+.hrat:hover {
   background-color: #0090e9;
 }
