@@ -18,10 +18,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.body__pravidla {
-  width: 80vw;
-  line-height: 1.5;
-}
 
 .uvodni {
   width: 350px;
@@ -30,14 +26,13 @@ body {
   background-color: #283e50;
   display: block;
 }
+
 main {
   background-color: #283e50;
   padding: 20px 15px;
   line-height: 1.5;
 }
-.main__pravidla {
-  border-radius: 7px 7px 0 0;
-}
+
 h1 {
   font-size: 50px;
   font-weight: normal;
@@ -93,6 +88,17 @@ nav {
   background-color: #0090e9;
 }
 
+/* Zde mi začíná CSS pro pravidla*/
+
+.body__pravidla {
+  width: 80vw;
+  line-height: 1.5;
+}
+
+.main__pravidla {
+  border-radius: 7px 7px 0 0;
+}
+
 .odrazky {
   list-style-type: decimal;
   text-align: left;
@@ -102,21 +108,28 @@ nav {
   margin-bottom: 1em;
 }
 
-.instrukce img {
-  max-width: 100%;
-  height: auto;
-}
-figure {
-  max-width: 50%;
-  padding: 0;
-  margin: 5px;
-  font-size: 70%;
-}
 .koleckaObrazek,
 .krizkyObrazek {
   width: 1em;
   height: 1em;
   filter: invert(100%);
+}
+
+.instrukce img {
+  max-width: 90%;
+  height: auto;
+}
+
+figure {
+  padding: 0 0 1em 0;
+  margin: 5px;
+  font-size: 70%;
+}
+
+figcaption {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 15px;
 }
 
 @media (min-width: 540px) {
@@ -125,6 +138,7 @@ figure {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   figure {
     width: calc((100% - 30px) / 2);
   }
