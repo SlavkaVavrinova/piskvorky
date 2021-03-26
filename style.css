@@ -18,6 +18,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.body__pravidla {
+  width: 80vw;
+  line-height: 1.5;
+}
 
 .uvodni {
   width: 350px;
@@ -43,7 +47,6 @@ h1 {
 }
 
 nav {
-  width: 350px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -99,10 +102,16 @@ nav {
   margin-bottom: 1em;
 }
 
-img {
-  width: 100%;
+.instrukce img {
+  max-width: 100%;
+  height: auto;
 }
-
+figure {
+  max-width: 50%;
+  padding: 0;
+  margin: 5px;
+  font-size: 70%;
+}
 .koleckaObrazek,
 .krizkyObrazek {
   width: 1em;
@@ -117,9 +126,13 @@ img {
     justify-content: space-between;
   }
   figure {
-    width: calc((100%-20px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 
 @media (min-width: 960px) {
+  .body__pravidla {
+    max-width: 1200px;
+    line-height: 1.5;
+  }
 }
