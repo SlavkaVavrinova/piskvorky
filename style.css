@@ -11,7 +11,7 @@ body {
   width: 350px;
   margin: 100px auto;
   color: white;
-  font-size: 15px;
+  font-size: 17px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background-image: linear-gradient(#615dad, #ffc8da);
@@ -31,7 +31,9 @@ main {
   padding: 20px 15px;
   line-height: 1.5;
 }
-
+.main__pravidla {
+  border-radius: 7px 7px 0 0;
+}
 h1 {
   font-size: 50px;
   font-weight: normal;
@@ -40,7 +42,7 @@ h1 {
   padding: 0;
 }
 
-footer {
+nav {
   width: 350px;
   list-style: none;
   margin: 0;
@@ -48,6 +50,19 @@ footer {
   align-self: stretch;
 }
 
+.index {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #1fcca4;
+  border-bottom: 0.5px solid #283e50;
+  display: block;
+}
+
+.uvodni:hover {
+  background-color: #1cbb96;
+}
 .pravidla {
   color: white;
   text-decoration: none;
@@ -73,4 +88,38 @@ footer {
 
 .hrat:hover {
   background-color: #0090e9;
+}
+
+.odrazky {
+  list-style-type: decimal;
+  text-align: left;
+}
+
+.odrazky li {
+  margin-bottom: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+.koleckaObrazek,
+.krizkyObrazek {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+
+@media (min-width: 540px) {
+  .instrukce {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  figure {
+    width: calc((100%-20px) / 2);
+  }
+}
+
+@media (min-width: 960px) {
 }
