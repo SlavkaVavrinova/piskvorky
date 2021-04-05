@@ -8,6 +8,19 @@ html {
 }
 
 body {
+  width: 80vw;
+  margin: 100px auto;
+  color: white;
+  font-size: 17px;
+  font-family: 'Arial', Helvetica, sans-serif;
+  text-align: center;
+  align-items: center;
+  line-height: 1.5;
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.body-index {
   width: 350px;
   margin: 100px auto;
   color: white;
@@ -20,7 +33,7 @@ body {
   background-attachment: fixed;
 }
 
-.uvodni {
+.picture-index {
   width: 350px;
   height: 210px;
   border-radius: 7px 7px 0 0;
@@ -28,7 +41,13 @@ body {
   display: block;
 }
 
+.main-index {
+  width: 350px;
+  background-color: #283e50;
+  padding: 20px 15px;
+}
 main {
+  width: 80vw;
   background-color: #283e50;
   padding: 20px 15px;
 }
@@ -39,6 +58,10 @@ h1 {
   font-family: 'Lobster', cursive;
   margin: 0;
   padding: 0;
+}
+h2 {
+  padding: 0;
+  margin: 0;
 }
 
 nav {
@@ -60,7 +83,7 @@ nav {
 .index:hover {
   background-color: #1cbb96;
 }
-.pravidla {
+.rules {
   color: white;
   text-decoration: none;
   text-align: center;
@@ -70,11 +93,11 @@ nav {
   display: block;
 }
 
-.pravidla:hover {
+.rules:hover {
   background-color: #1cbb96;
 }
 
-.hrat {
+.play {
   color: white;
   text-decoration: none;
   text-align: center;
@@ -83,37 +106,40 @@ nav {
   display: block;
 }
 
-.hrat:hover {
+.play:hover {
   background-color: #0090e9;
 }
 
-/* Zde mi začíná CSS pro pravidla*/
+/*CSS pravidla*/
 
-.body__pravidla {
-  width: 80vw;
-}
-
-.main__pravidla {
+.main-rules {
   border-radius: 7px 7px 0 0;
 }
-
-.odrazky {
-  list-style-type: decimal;
+ol {
   text-align: left;
 }
 
-.odrazky li {
-  margin-bottom: 1em;
+ol li {
+  margin-bottom: 1rem;
 }
 
-.koleckaObrazek,
-.krizkyObrazek {
+.circle,
+.cross {
   width: 1em;
   height: 1em;
   filter: invert(100%);
+  padding: auto 10px;
+}
+.icon-play {
+  padding: 0;
+}
+.icon-picture {
+  padding-left: 10px;
+  display: block;
+  align-items: center;
 }
 
-.instrukce img {
+.instructions img {
   max-width: 90%;
   height: auto;
 }
@@ -130,9 +156,74 @@ figcaption {
   padding: 0 15px;
   font-style: italic;
 }
+/*CSS hra*/
+.icon {
+  display: flex;
+  width: 40vw;
+  align-items: center;
+}
+.icon-play {
+  display: flex;
+  flex: 1 0 50%;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.icon-nav {
+  display: flex;
+  flex: 1 0 50%;
+  justify-content: flex-end;
+}
+.icon-home {
+  background-color: #1fcca4;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.icon-home:hover,
+.icon-home:focus {
+  background-color: #1cbb96;
+}
+.icon-restart {
+  background-color: #0197f6;
+  padding: 5px;
+  border-radius: 3px;
+}
+.icon-restart:hover {
+  background-color: #0090e9;
+}
+
+.playingArea {
+  width: 40vw;
+  min-width: 200px;
+  padding: 0;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  display: block;
+}
+.row {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  height: 4vw;
+}
+button {
+  width: 4vw;
+  height: 4vw;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  background-color: #c1b4d7;
+}
+
+button:hover,
+button:focus {
+  background-color: #e3cbe0;
+}
 
 @media (min-width: 540px) {
-  .instrukce {
+  .instructions {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -144,7 +235,7 @@ figcaption {
 }
 
 @media (min-width: 960px) {
-  .body__pravidla {
+  .body__rules {
     max-width: 1200px;
   }
 }
