@@ -20,20 +20,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.body-index {
+
+.index-body {
   width: 350px;
-  margin: 100px auto;
-  color: white;
-  font-size: 17px;
-  font-family: 'Arial', Helvetica, sans-serif;
-  text-align: center;
-  line-height: 1.5;
-  background-image: linear-gradient(#615dad, #ffc8da);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-.picture-index {
+.index-picture {
   width: 350px;
   height: 210px;
   border-radius: 7px 7px 0 0;
@@ -41,11 +33,12 @@ body {
   display: block;
 }
 
-.main-index {
+.index-main {
   width: 350px;
   background-color: #283e50;
   padding: 20px 15px;
 }
+
 main {
   width: 80vw;
   background-color: #283e50;
@@ -58,10 +51,6 @@ h1 {
   font-family: 'Lobster', cursive;
   margin: 0;
   padding: 0;
-}
-h2 {
-  padding: 0;
-  margin: 0;
 }
 
 nav {
@@ -80,9 +69,12 @@ nav {
   display: block;
 }
 
-.index:hover {
+.index:hover,
+.index:focus,
+.index:active {
   background-color: #1cbb96;
 }
+
 .rules {
   color: white;
   text-decoration: none;
@@ -93,7 +85,9 @@ nav {
   display: block;
 }
 
-.rules:hover {
+.rules:hover,
+.rules:focus,
+.rules:active {
   background-color: #1cbb96;
 }
 
@@ -106,15 +100,18 @@ nav {
   display: block;
 }
 
-.play:hover {
+.play:hover,
+.play:focus,
+.play:active {
   background-color: #0090e9;
 }
 
 /*CSS pravidla*/
 
-.main-rules {
+.rules-main {
   border-radius: 7px 7px 0 0;
 }
+
 ol {
   text-align: left;
 }
@@ -129,14 +126,6 @@ ol li {
   height: 1em;
   filter: invert(100%);
   padding: auto 10px;
-}
-.icon-play {
-  padding: 0;
-}
-.icon-picture {
-  padding-left: 10px;
-  display: block;
-  align-items: center;
 }
 
 .instructions img {
@@ -156,57 +145,75 @@ figcaption {
   padding: 0 15px;
   font-style: italic;
 }
+
 /*CSS hra*/
-.icon {
+h2 {
+  padding: 0;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.left {
   display: flex;
   width: 40vw;
   align-items: center;
 }
-.icon-play {
+
+.left__info {
   display: flex;
-  flex: 1 0 50%;
+  flex: 0 0 50%;
   justify-content: flex-start;
   align-items: baseline;
 }
-.icon-nav {
+
+.right {
   display: flex;
-  flex: 1 0 50%;
+  flex: 0 0 50%;
   justify-content: flex-end;
 }
-.icon-home {
+
+.right__home {
   background-color: #1fcca4;
   padding: 5px;
   margin-right: 5px;
   border-radius: 3px;
 }
-.icon-home:hover,
-.icon-home:focus {
+
+.right__home:hover,
+.right__home:focus,
+.right__home:active {
   background-color: #1cbb96;
 }
-.icon-restart {
+
+.right__restart {
   background-color: #0197f6;
   padding: 5px;
   border-radius: 3px;
 }
-.icon-restart:hover {
+
+.right__restart:hover,
+.right__restart:focus,
+.right__restart:active {
   background-color: #0090e9;
 }
 
 .playingArea {
   width: 40vw;
-  min-width: 200px;
   padding: 0;
   align-items: center;
+  text-align: center;
   margin: 0 auto;
   display: flex;
   display: block;
 }
+
 .row {
   padding: 0;
   margin: 0;
   align-items: center;
   height: 4vw;
 }
+
 button {
   width: 4vw;
   height: 4vw;
@@ -218,7 +225,8 @@ button {
 }
 
 button:hover,
-button:focus {
+button:focus,
+button:active {
   background-color: #e3cbe0;
 }
 
