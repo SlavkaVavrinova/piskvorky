@@ -147,6 +147,10 @@ figcaption {
 }
 
 /*CSS hra*/
+.play-body {
+  max-width: 80vmin;
+}
+
 h2 {
   padding: 0;
   margin-right: 5px;
