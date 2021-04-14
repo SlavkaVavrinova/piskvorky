@@ -121,7 +121,8 @@ ol li {
 }
 
 .circle,
-.cross {
+.cross,
+.player {
   width: 1em;
   height: 1em;
   filter: invert(100%);
@@ -232,6 +233,35 @@ button:hover,
 button:focus,
 button:active {
   background-color: #e3cbe0;
+}
+
+.button--circle {
+  /*transition: ease-in 0.15s background-size;
+   transition ease;
+  /animation: pulz 0.45s infinite;*/
+  background-image: url(circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  animation-name: button-animation;
+  animation-duration: 0.15s;
+}
+
+.button--cross {
+  background-image: url(cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  animation-name: button-animation;
+  animation-duration: 0.15s;
+}
+@keyframes button-animation {
+  from {
+    background-size: 60%;
+  }
+  to {
+    background-size: 75%;
+  }
 }
 
 @media (min-width: 540px) {
