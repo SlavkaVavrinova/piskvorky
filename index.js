@@ -14,15 +14,12 @@ for (let i = 0; i < buttons.length; i += 1) {
       if (player === 'circle') {
         event.target.classList.replace('button', 'button--circle');
         player = 'cross';
-
         playerPicture.src = 'cross.svg';
         playerPicture.alt = 'Křížek';
-        player.src;
         event.target.disabled = true;
       } else if (player === 'cross') {
         event.target.classList.replace('button', 'button--cross');
         player = 'circle';
-
         playerPicture.src = 'circle.svg';
         playerPicture.alt = 'Kolečko';
         event.target.disabled = true;
