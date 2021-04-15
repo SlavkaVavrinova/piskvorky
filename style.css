@@ -234,11 +234,8 @@ button:focus,
 button:active {
   background-color: #e3cbe0;
 }
-
+/*CSS hra, JavaScript úkol 4*/
 .button--circle {
-  /*transition: ease-in 0.15s background-size;
-   transition ease;
-  /animation: pulz 0.45s infinite;*/
   background-image: url(circle.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -263,7 +260,7 @@ button:active {
     background-size: 75%;
   }
 }
-
+/*Media Queries*/
 @media (min-width: 540px) {
   .instructions {
     display: flex;
