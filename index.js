@@ -3,7 +3,6 @@
 let player = 'circle';
 
 const fields = document.querySelectorAll('.button');
-
 let playerPicture = document.querySelector('.player');
 
 //------
@@ -128,11 +127,3 @@ for (let i = 0; i < fields.length; i += 1) {
     }
   });
 }
-
-//S použitím nachystaných funkcí zjisti při každém tahu, jestli se nejedná o výherní. Nový kód navaž na event listener ze čtvrtého úkolu.
-
-//toto bude blbě
-
-//Funkci isWinningMove pusť s každým nově přidaným symbolem.
-
-//Pokud vrátí true, zobraz alert s hláškou, který hráč vyhrál.
