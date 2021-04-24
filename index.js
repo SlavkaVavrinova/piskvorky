@@ -48,7 +48,6 @@ for (let i = 0; i < fields.length; i += 1) {
 }
 
 //Funkce pro úkol 5
-
 const boardSize = 10;
 
 const getPosition = (field) => {
